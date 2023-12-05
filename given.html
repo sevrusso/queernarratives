@@ -11,18 +11,48 @@
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play given.</tw-noscript></noscript></tw-story>
 <tw-storydata name="given" startnode="1" creator="Twine" creator-version="2.7.1" format="Harlowe" format-version="3.3.7" ifid="E0EC07E8-687B-40C9-9CC5-9217797A2024" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="first" tags="" position="700,200" size="100,100">I am at work waitressing like I usually do multiple times a week. There is a new [[waitress]] that I have been training and she is doing a great job. She was nervous at first but now she is comfortable and being respectful of the customers. 
 
-(set: $given to true)</tw-passagedata><tw-passagedata pid="2" name="startup" tags="startup" position="400,100" size="100,100">
+(set: $given to true)
+
+  &lt;img src=&quot;https://sevrusso.github.io/queernarratives/images/waitress.jpeg&quot; width=&quot;460&quot; height=&quot;345&quot;&gt; 
+  
+  Here is a picture of me waitressing. My mom came to visit me so we took a picture. </tw-passagedata><tw-passagedata pid="2" name="startup" tags="startup" position="400,100" size="100,100">
 {
 (set: $given to false)
-}</tw-passagedata><tw-passagedata pid="3" name="waitress" tags="" position="500,400" size="100,100">I approach the waitress I have been training and I give her an [[origami]] folded 2 dollar bill. The 2 dollar bill is very lucky. </tw-passagedata><tw-passagedata pid="4" name="origami" tags="" position="900,400" size="100,100">The origami folded 2 dollar bill is a good luck symbol as well as I give this to her because it was given to me when I first started waitressing. was passed onto me by my waitress mentor, she told me to give this to someone when you find another great waitress and pass it on, I am passing it onto you because you have done amazing and now it is your turn to train someone and pass it on. So that is exactly what I did, she loved it and thanked me. 
+(set: $random1 to (random: 1, 5))
+}</tw-passagedata><tw-passagedata pid="3" name="waitress" tags="" position="500,400" size="100,100">I approach the waitress I have been training and I give her an [[origami]] folded 2 dollar bill. The 2 dollar bill is very lucky. 
+
+This folded dollar bill means a lot. 
+
+It has been passed down to many waitresses in the local resturant that I work at. 
+
+It feels like such a honor when you recieve this origami dollar bill. </tw-passagedata><tw-passagedata pid="4" name="origami" tags="" position="900,400" size="100,100">The origami folded 2 dollar bill is a good luck symbol as well as I give this to her because it was given to me when I first started waitressing. was passed onto me by my waitress mentor, she told me to give this to someone when you find another great waitress and pass it on, I am passing it onto you because you have done amazing and now it is your turn to train someone and pass it on. So that is exactly what I did, she loved it and thanked me. 
 
 [[first]]
 
 (set: $given to true)
 
-Then our boss told us to[[go back to work |first]].
+Go to [[food]]
 
- &lt;img src=&quot;https://sevrusso.github.io/queernarratives/dollar-heart_thumb.jpg&quot;&gt;</tw-passagedata></tw-storydata>
+ &lt;img src=&quot;https://sevrusso.github.io/queernarratives/dollar-heart_thumb.jpg&quot;&gt;</tw-passagedata><tw-passagedata pid="5" name="food" tags="" position="775,525" size="100,100">I am feeling generous so I will give away some of our customers favorite food.
+
+I am going to randomly give away this food, but I am going to make a list of what food I would give away to certain people.
+
+
+(if: $random1 is 1)[If there is a party of 5 or more I will give away [[20 wings]] for free.]
+(elseif: $random1 is 2)[If my favorite older couple comes in I will give away [[chicken noodle soup]] on the house.]
+(elseif: $random1 is 3)[If my dad and friends walk in I will give them [[cheeseburgers]] even with bacon on it.]
+(elseif: $random1 is 4)[If my grandma comes in I will give her [[wine]] on the house.]
+(elseif: $random1 is 5)[If my boss comes in with his family they will all get free [[everything]] on the house.]
+</tw-passagedata><tw-passagedata pid="6" name="20 wings" tags="" position="500,600" size="100,100">Our small local resturant makes fantastic wings. Most large parties that come into our resturant order wings as an appetizer. Especially if there is a big sports game going on. Our cook makes his very own homemade wing sauce, that is very popular. With this being said, I will give away 20 wings for free to a party of 5 or larger!!
+
+  &lt;img src=&quot;https://sevrusso.github.io/queernarratives/images/wings.jpg&quot; width=&quot;460&quot; height=&quot;345&quot;&gt; 
+</tw-passagedata><tw-passagedata pid="7" name="chicken noodle soup" tags="" position="550,750" size="100,100">My favorite customers that come into our resturant is this older couple. I know their order by heart at this point. They are the sweetest and always look forward to seeing me. They both order the chicken noodle soup to start, and usually get 2 bowls. Sometimes they even get some chicken noodle soup to go. When I see them walk into our resturant I will make their day by giving them free soup with their meal and to go. 
+
+  &lt;img src=&quot;https://sevrusso.github.io/queernarratives/images/soup.jpg&quot; width=&quot;460&quot; height=&quot;345&quot;&gt; 
+</tw-passagedata><tw-passagedata pid="8" name="cheeseburgers" tags="" position="1000,625" size="100,100">My dads favorite food is a good old cheeseburger. This is also his friends favorite food as well. Whenever they come into eat they usually all get cheesburgers, and if they are feeling extra that day they will also get bacon added onto their burgers. This will be a nice surprise when they walk in and it is free!!</tw-passagedata><tw-passagedata pid="9" name="wine" tags="" position="700,900" size="100,100">When my grandma comes to visit she loves to sip some wine before she has her meal. This is her excuse to get out of her house LOL. As a surprise I will give her a free glass of wine with her meal. 
+
+  &lt;img src=&quot;https://sevrusso.github.io/queernarratives/images/wine.jpg&quot; width=&quot;460&quot; height=&quot;345&quot;&gt; 
+</tw-passagedata><tw-passagedata pid="10" name="everything" tags="" position="900,900" size="100,100">My boss usually gets his food for free and likes to buy his families food. Occasionally we will have his families food on the house and not make anyone pay. Today is that day, their entire meal will be on the house. This happens rarely because his family is super big LOL.</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
